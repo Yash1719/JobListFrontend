@@ -1,0 +1,51 @@
+/* Global reset for list styling */
+.ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 0;  /* Adding some margin for spacing */
+}
+
+/* Style each list item */
+.ul li {
+  display: inline-block;
+}
+
+/* Center align the entire content */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* Typography improvements */
+h3 {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style the button link */
+.MuiButton-outlined {
+  border-color: #007bff;  /* Blue border for the outlined button */
+  color: #007bff;  /* Matching text color */
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.MuiButton-outlined:hover {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.MuiButton-outlined a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
