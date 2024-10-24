@@ -18,11 +18,11 @@ const Feed = () => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const response = await axios.get(`https://ec2-51-20-121-251.eu-north-1.compute.amazonaws.com/posts/${query}`);
+      const response = await axios.get(`http://ec2-51-20-121-251.eu-north-1.compute.amazonaws.com/posts/${query}`);
       setPost(response.data);
     };
     const fetchInitialPosts = async () => {
-      const response = await axios.get(`https://ec2-51-20-121-251.eu-north-1.compute.amazonaws.com/allPosts`);
+      const response = await axios.get(`http://ec2-51-20-121-251.eu-north-1.compute.amazonaws.com/allPosts`);
       setPost(response.data);
     };
     if (query.length === 0) fetchInitialPosts();
